@@ -2,9 +2,12 @@
     <div class="footer">
         <div class="message">
             <span class="text-wrapper">
-                <span class="letters">This is the Footer</span>
+                <span class="letters">{{appreciationMessage}}</span>
             </span>
         </div>
+        <div>
+                <p class="copyrightTag">{{ copyrightMessage }}</p>
+            </div>
     </div>
 </template>
 <script>
@@ -14,6 +17,8 @@ export default {
     data() {
         return {
             aboutpage: 'This is the Footer',
+            copyrightMessage: '© 2024 Aaleeyah Ivy-Kilgore',
+            appreciationMessage: 'My husband hosted this site for me. Thank you, my love!'
         }
     },
     mounted() {
