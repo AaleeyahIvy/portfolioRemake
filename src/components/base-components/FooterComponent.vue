@@ -18,7 +18,7 @@ export default {
         return {
             aboutpage: 'This is the Footer',
             copyrightMessage: '© 2024 Aaleeyah Ivy-Kilgore',
-            appreciationMessage: 'My husband hosted this site for me. Thank you, my love!'
+            appreciationMessage: 'My husband hosted this site for me. Thank you, my love!',
         }
     },
     mounted() {

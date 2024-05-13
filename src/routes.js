@@ -1,10 +1,16 @@
-/* import Vue from "vue";
-import VueRouter, { RouteConfig } from "vue-router";
+import Vue from "vue";
+import VueRouter from "vue-router";
 import HomeView from "../views/HomeView.vue";
+import AboutComponent from "../views/AboutView.vue";
+import MyProjectsComponent from "../views/MyProjectsView.vue";
+import ContactComponent from "../views/ContactView.vue";
+import MyArtGalleryComponent from "../views/MyArtGalleryView.vue";
+import MyBlogComponent from "../views/MyBlogView.vue";
+import MyResumeComponent from "../views/MyResumeView.vue";
 
 Vue.use(VueRouter);
 
-const routes: Array<RouteConfig> = [
+const routes = [
   {
     path: "/",
     name: "home",
@@ -13,13 +19,40 @@ const routes: Array<RouteConfig> = [
   {
     path: "/about",
     name: "about",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(/* webpackChunkName: "about" */ /* "../views/AboutView.vue"),
+    component: AboutComponent
   },
+  {
+    path: "/projects",
+    name: "projects",
+    component: MyProjectsComponent
+  },
+  {
+    path: "/art",
+    name: "art-gallery",
+    component: MyArtGalleryComponent
+  },
+  {
+    path:"/blog",
+    name: "blog",
+    component: MyBlogComponent
+  },
+  {
+    path: "/contact",
+    name: "contact",
+    component: ContactComponent
+  },
+  {
+    path: "/resume",
+    name: "resume",
+    component: MyResumeComponent
+  },
+  {
+    path: "*",
+    redirect: { name: "home" }
+  
+  }
 ];
+
 const router = new VueRouter({
   mode: "history",
   base: process.env.BASE_URL,
@@ -27,4 +60,4 @@ const router = new VueRouter({
 });
 
 export default router; 
-*/
+

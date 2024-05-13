@@ -1,18 +1,17 @@
 <template>
     <div id="app">
         <NavigationBar />
-        <AboutComponent />
+        <ContactComponent />
         <FooterComponent />
     </div>
 </template>
-
 <script>
-import AboutComponent from '@/components/base-components/AboutComponent.vue'
+import ContactComponent from '@/components/base-components/ContactComponent.vue'
 import NavigationBar from '@/components/base-components/NavigationBar.vue'
 import FooterComponent from '@/components/base-components/FooterComponent.vue'
 
-export default {
-    name: 'HomeView',
+export  default {
+    name: 'ContactView',
     computed: {
         route() {
             return this.$route.path
@@ -20,19 +19,8 @@ export default {
     },
     components: {
         NavigationBar,
-        AboutComponent,
+        ContactComponent,
         FooterComponent
     }
 }
 </script>
-
-<style>
-#app {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: #2c3e50;
-    margin-top: 60px;
-}
-</style>

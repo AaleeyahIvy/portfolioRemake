@@ -1,15 +1,14 @@
 <template>
     <div>
-        <h1>Home</h1>
         <p>{{ aboutpage }}</p>
     </div>
 </template>
 <script>
 export default {
-    name: 'HomeComponent',
+    name: 'MyBlogComponent',
     data() {
         return {
-            aboutpage: 'This is the Home page'
+            aboutpage: 'This is the Blog page'
         }
     }
 }

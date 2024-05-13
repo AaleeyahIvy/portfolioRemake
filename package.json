@@ -11,7 +11,8 @@
     "animejs": "^3.2.2",
     "bootstrap": "^5.3.3",
     "core-js": "^3.8.3",
-    "vue": "^3.4.25"
+    "vue": "^3.4.25",
+    "vue-router": "^4.3.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-eslint": "~5.0.0",
