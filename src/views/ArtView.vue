@@ -6,7 +6,7 @@
     </div>
 </template>
 <script>
-import MyArtGalleryComponent from '@/components/MyArtGalleryComponent.vue'
+import MyArtGalleryComponent from '@/components/base-components/MyArtGalleryComponent.vue'
 import NavigationBar from '@/components/base-components/NavigationBar.vue'
 import FooterComponent from '@/components/base-components/FooterComponent.vue'
 

@@ -6,11 +6,11 @@
     </div>
 </template>
 <script>
-import MyProjectsComponent from '@/components/MyProjectsComponent.vue'
+import MyProjectsComponent from '@/components/base-components/MyProjectsComponent.vue'
 import NavigationBar from '@/components/base-components/NavigationBar.vue'
 import FooterComponent from '@/components/base-components/FooterComponent.vue'
 
-export default {
+export  default {
     name: 'ProjectsView',
     computed: {
         route() {
