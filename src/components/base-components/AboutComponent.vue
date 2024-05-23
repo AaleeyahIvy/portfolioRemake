@@ -21,6 +21,7 @@
 </template>
 <script>
 import HappyAaleeyahSelfie from '@/assets/images/HappyAaleeyah1.jpg'
+import anime from 'animejs/lib/anime.es.js';
 
 export default {
     name: 'AboutComponent',
@@ -32,7 +33,15 @@ export default {
         }
     },
     mounted() {
-        
+        // create animation to scale button when hovering.
+        anime.timeline({loop: false})
+            .add({
+                targets: '.icons',
+                scale: [0, 1],
+                duration: 500,
+                elasticity: 600,
+                delay: 100
+            });
     }
 }
 </script>
