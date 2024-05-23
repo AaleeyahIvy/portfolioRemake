@@ -1,13 +1,13 @@
 <template>
     <div>
-        <b-nav>
-            <b-nav-item><router-link to="/">Home</router-link></b-nav-item>
-            <b-nav-item><router-link to="/projects">Projects</router-link></b-nav-item>
-            <b-nav-item><router-link to="/art-gallery">Art</router-link></b-nav-item>
-            <b-nav-item><router-link to="/blog">Blog</router-link></b-nav-item>
-            <b-nav-item><router-link to="/contact">Contact</router-link></b-nav-item>
-            <b-nav-item><router-link to="/resume">Resume</router-link></b-nav-item>
-        </b-nav>
+        <nav class="b-nav col-5">
+            <div class="b-nav-item"><RouterLink to="/">Home</RouterLink></div>
+            <div class="b-nav-item"><RouterLink to="/projects">Projects</RouterLink></div>
+            <div class="b-nav-item"><RouterLink to="/art">Art</RouterLink></div>
+            <div class="b-nav-item"><RouterLink to="/blog">Blog</RouterLink></div>
+            <div class="b-nav-item"><RouterLink to="/contact">Contact</RouterLink></div>
+            <div class="b-nav-item"><RouterLink to="/resume">Resume</RouterLink></div>
+        </nav>
     </div>
 </template>
 <script>
@@ -16,7 +16,7 @@ export default {
     data() {
         return {
 
-            }
+        }
     }
 }
 </script>

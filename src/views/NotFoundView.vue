@@ -1,17 +1,17 @@
 <template>
     <div id="app">
         <NavigationBar />
-        <MyBlogComponent />
+        <NotFoundComponent />
         <FooterComponent />
     </div>
 </template>
 <script>
-import MyBlogComponent from '../components/base-components/MyBlogComponent.vue'
+import NotFoundComponent from '../components/base-components/NotFoundComponent.vue'
 import NavigationBar from '../components/base-components/NavigationBar.vue'
 import FooterComponent from '../components/base-components/FooterComponent.vue'
 
-export default {
-    name: 'BlogView',
+export  default {
+    name: 'ProjectsView',
     computed: {
         route() {
             return this.$route.path
@@ -19,7 +19,7 @@ export default {
     },
     components: {
         NavigationBar,
-        MyBlogComponent,
+        NotFoundComponent,
         FooterComponent
     }
 }

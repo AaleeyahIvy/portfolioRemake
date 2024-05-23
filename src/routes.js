@@ -1,13 +1,12 @@
-import Vue from "vue";
-import VueRouter from "vue-router";
-import HomeView from "./views/HomeView.vue";
-import MyProjectsComponent from "./views/MyProjectsView.vue";
-import MyArtGalleryComponent from "./views/MyArtGalleryView.vue";
-import MyBlogComponent from "./views/MyBlogView.vue";
-import ContactComponent from "./views/ContactView.vue";
-import MyResumeComponent from "./views/MyResumeView.vue";
 
-Vue.use(VueRouter);
+import { createMemoryHistory, createRouter } from 'vue-router'
+import HomeView from "./views/HomeView.vue";
+import ProjectsView from './views/ProjectsView.vue';
+import ArtView from './views/ArtView.vue';
+import BlogView from './views/BlogView.vue';
+import ContactView from './views/ContactView.vue';
+import ResumeView from './views/ResumeView.vue';
+import NotFoundView from './views/NotFoundView.vue';
 
 const routes = [
   {
@@ -18,40 +17,39 @@ const routes = [
   {
     path: "/projects",
     name: "projects",
-    component: MyProjectsComponent
+    component: ProjectsView
   },
   {
     path: "/art",
     name: "art-gallery",
-    component: MyArtGalleryComponent
+    component: ArtView
   },
   {
     path:"/blog",
     name: "blog",
-    component: MyBlogComponent
+    component: BlogView
   },
   {
     path: "/contact",
     name: "contact",
-    component: ContactComponent
+    component: ContactView
   },
   {
     path: "/resume",
     name: "resume",
-    component: MyResumeComponent
+    component: ResumeView
   },
   {
-    path: "*",
-    redirect: { name: "home" }
-  
+    path: "/:catchAll(.*)",
+    name: "not-found",
+    component: NotFoundView
   }
 ];
 
-const router = new VueRouter({
-  mode: "history",
-  base: process.env.BASE_URL,
+const router = createRouter({
+  history: createMemoryHistory(),
   routes,
-});
+})
 
 export default router; 
 
