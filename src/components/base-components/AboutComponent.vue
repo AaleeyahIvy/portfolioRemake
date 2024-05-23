@@ -1,6 +1,6 @@
 <template>
     <div class="text-box col-9">
-        <div class="aaleeyah-image"></div>
+        <img :src='require(' ')'>
         <h1>{{ header }}</h1>
         <p class="text col-12">
             A little about me - I have AuDHD and am fascinated with creating things. I'm currently working as an associate software engineer. <br><br>
@@ -15,12 +15,15 @@
     </div>
 </template>
 <script>
+import HappyAaleeyahSelfie from '../../assets/images/'
+
 export default {
     name: 'AboutComponent',
     data() {
         return {
             header: 'My name is Aaleeyah Ivy-Kilgore',
             aboutpage: 'This is the About page',
+            assets: HappyAaleeyahSelfie,
         }
     }
 }
