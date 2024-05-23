@@ -1,6 +1,6 @@
 <template>
     <div class="text-box col-9">
-        <img :src='require(' ')'>
+        <img :src="assets" alt="Aaleeyah Ivy-Kilgore" class="about-image">
         <h1>{{ header }}</h1>
         <p class="text col-12">
             A little about me - I have AuDHD and am fascinated with creating things. I'm currently working as an associate software engineer. <br><br>
@@ -8,14 +8,19 @@
             I graduated high school in 2020 and went straight to college pursuing an associate in computer programming. During college, the pandemic was in full swing and it got super boring staying indoors constantly, so I created a jewelry company called - CLAYDHD. It's more of a variety company now, specializing in web design, jewelry, and cute accessories. <br><br>
             Eventually, I would like to be more specialized in web design or web development. Anyway, some things I enjoy these days are, roller/ice skating, designing, playing competitive video games, and creating new products for my business. 
         </p>
-        <div>
-            <icon></icon>
-            <icon></icon>
+        <div class="icons">
+            <h1>My Socials:</h1>
+            <div class="iconGH"></div>
+            <div class="iconIG"></div>
+            <div class="iconTW"></div>
+            <div class="iconLI"></div>
+            <div class="iconTT"></div>
+            <div class="iconET"></div>
         </div>
     </div>
 </template>
 <script>
-import HappyAaleeyahSelfie from '../../assets/images/'
+import HappyAaleeyahSelfie from '@/assets/images/HappyAaleeyah1.jpg'
 
 export default {
     name: 'AboutComponent',
@@ -25,6 +30,9 @@ export default {
             aboutpage: 'This is the About page',
             assets: HappyAaleeyahSelfie,
         }
+    },
+    mounted() {
+        
     }
 }
 </script>
