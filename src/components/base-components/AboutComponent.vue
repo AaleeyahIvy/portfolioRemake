@@ -10,12 +10,12 @@
         </p>
         <div class="icons">
             <h1>My Socials:</h1>
-            <div class="iconGH"></div>
-            <div class="iconIG"></div>
-            <div class="iconTW"></div>
-            <div class="iconLI"></div>
-            <div class="iconTT"></div>
-            <div class="iconET"></div>
+            <div id="iconGH" class="icon" href=""></div>
+            <div id="iconIG" class="icon" href=""></div>
+            <div id="iconTW" class="icon" href=""></div>
+            <div id="iconLI" class="icon" href=""></div>
+            <div id="iconTT" class="icon" href=""></div>
+            <div id="iconET" class="icon" href=""></div>
         </div>
     </div>
 </template>
@@ -34,14 +34,30 @@ export default {
     },
     mounted() {
         // create animation to scale button when hovering.
-        anime.timeline({loop: false})
-            .add({
-                targets: '.icons',
-                scale: [0, 1],
-                duration: 500,
-                elasticity: 600,
-                delay: 100
+        var icons = document.getElementsByClassName('icon');
+        console.log(icons);
+        for(var i = 0; i < icons.length; i++){
+            icons[i].addEventListener('mouseover', function(){
+                anime.remove('#icon');
+                anime({
+                    targets: this,
+                    translateY: [0, -35],
+                    scale: 1.5,
+                    duration: 500,
+                    easing: 'linear'
+                });
             });
+            icons[i].addEventListener('mouseout', function(){
+                anime.remove('#icon');
+                anime({
+                    targets: this,
+                    translateY: [-35, 0],
+                    scale: 1,
+                    duration: 500,
+                    easing: 'linear'
+                });
+            });
+        }
     }
 }
 </script>

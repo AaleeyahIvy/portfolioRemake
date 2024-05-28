@@ -121,42 +121,42 @@ body {
   align-items: center;
   margin: 20px;
 }
-.iconIG{
+#iconIG{
   height: 50px;
   width: 50px;
   background-color: #d76baa;
   border-radius: 25px;
   margin: 20px;
 }
-.iconLI{
+#iconLI{
   height: 50px;
   width: 50px;
   background-color: #2d89e6;
   border-radius: 25px;
   margin: 20px;
 }
-.iconGH{
+#iconGH{
   height: 50px;
   width: 50px;
   background-color: #6a6a6a;
   border-radius: 25px;
   margin: 20px;
 }
-.iconTW{
+#iconTW{
   height: 50px;
   width: 50px;
   background-color: #4ab8fd;
   border-radius: 25px;
   margin: 20px;
 }
-.iconET{
+#iconET{
   height: 50px;
   width: 50px;
   background-color: #f2924e;
   border-radius: 25px;
   margin: 20px;
 }
-.iconTT{
+#iconTT{
   height: 50px;
   width: 50px;
   background-color: #7063eb;
