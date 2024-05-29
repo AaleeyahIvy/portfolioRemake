@@ -41,3 +41,18 @@ export default {
     }
 }
 </script>
+<style>
+.copyrightTag{
+  font-family: "Libre Barcode 128 Text", system-ui;
+  font-size: 2.0rem;
+  font-style: normal;
+}
+.footer{
+  bottom: 0;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 10px;
+  border-radius: 12px;
+}
+</style>
