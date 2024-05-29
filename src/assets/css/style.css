@@ -8,10 +8,11 @@ Use ratios for line height
 */
 :root {
   --main-color:#ea339e;
-  --main-secondary-color:#f976c3;
+  --main-secondary-color:#fd87cc;
   --secondary-color:#1F0011;
+  --secondary-secondary-color:#ffbfe1;
   --main-text-color:#171616;
-  --main-white-color:#f0e9e9;
+  --main-white-color:#ffe4e4;
 }
 body {
   color: #171616;
@@ -19,7 +20,7 @@ body {
   justify-content: center;
   font-family: 'Poppins', sans-serif;
 }
-
+/* NAVIGATION */
 .b-nav {
   position: absolute;
   top: 0;
@@ -89,11 +90,19 @@ body {
   transform: scaleX(1);
   transform-origin: left;
 }
+
+.copyrightTag{
+  font-family: "Libre Barcode 128 Text", system-ui;
+  font-size: 2.0rem;
+  font-style: normal;
+}
+
 .text-box {
   margin: auto;
   padding: 20px;
   display: block;
   background: var(--main-white-color);
+  border: #171616 2px solid;
 }
 .text {
   text-wrap: balance;
@@ -115,11 +124,28 @@ body {
   border-radius: 100px;
   
 }
+.footer{
+  bottom: 0;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 10px;
+  border-radius: 12px;
+
+}
+.title{
+  position: absolute;
+  top: 6.3%;
+  left: 45%;
+
+}
+/* ICONS */
 .icons{
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 20px;
+
 }
 #iconIG{
   height: 50px;
@@ -163,6 +189,18 @@ body {
   border-radius: 25px;
   margin: 20px;
 }
+.iconLink {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: var(--main-text-color);
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.5;
+
+}
+
 
 /* MEDIA QUERIES */
 /* Small devices (portrait tablets and large phones, 600px and up) */
