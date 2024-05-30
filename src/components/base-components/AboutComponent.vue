@@ -1,6 +1,6 @@
 <template>
     <div class="text-box col-10">
-        <img :src="assets" alt="Aaleeyah Ivy-Kilgore" class="about-image">
+        <img :src="require('@/assets/images/HappyAaleeyah1.jpg')" alt="Aaleeyah Ivy-Kilgore" class="about-image">
         <h1>{{ header }}</h1>
         <p class="text col-12">
             A little about me - I have AuDHD and am fascinated with creating things. I'm currently working as an associate software engineer. <br><br>
@@ -20,16 +20,15 @@
     </div>
 </template>
 <script>
-import HappyAaleeyahSelfie from '@/assets/images/HappyAaleeyah1.jpg'
 import anime from 'animejs/lib/anime.es.js';
 
+// unless youre using images as a module, you can just require them in the template
 export default {
     name: 'AboutComponent',
     data() {
         return {
             header: 'My name is Aaleeyah Ivy-Kilgore',
             aboutpage: 'This is the About page',
-            assets: HappyAaleeyahSelfie,
         }
     },
     mounted() {
