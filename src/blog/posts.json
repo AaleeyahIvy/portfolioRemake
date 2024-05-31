@@ -7,7 +7,7 @@
             "author": "Aaleeyah",
             "date": "May 31st, 2024",
             "content": "Well, I am writing my first blog post. I was thinking of using a middleware cms like buttercms or wordpress, but I decided to write my own. I am using a json file to store my posts. I will be adding more features to this blog soon. Stay tuned!",
-            "image": "@/assets/images/skys.jpg"
+            "image": "https://images.unsplash.com/photo-1531604250646-2f0e818c4f06?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&dl=ann-savchenko-H0h_89iFsWs-unsplash.jpg"
         },
         {
             "id": 2,
@@ -15,7 +15,7 @@
             "author": "Aaleeyah",
             "date": "2016-01-02",
             "content": "This is my dummy post, just making sure things get rendered correctly and all that cool jazz.",
-            "image": "/assets/images/skys.jpg"
+            "image": "https://images.unsplash.com/photo-1531604250646-2f0e818c4f06?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&dl=ann-savchenko-H0h_89iFsWs-unsplash.jpg"
         }
     ]
 }

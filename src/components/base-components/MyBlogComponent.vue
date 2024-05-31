@@ -1,16 +1,18 @@
 <template>
     <div class="post-holder col-10">
         <div v-for="post in posts" :key="post.id" class="post">
-            <img :src="post.image" alt="post.title" />
+            <img :src="post.image" alt="post.title" width="500" height="650" />
             <header>{{ post.title }}</header>
-            <p>{{ post.content }}</p>
+            <p class="content">{{ post.content }}</p>
             <div>
-                <a :href="post.link">Read More</a>
+                <RouterLink :to="'/blog/' + post.id">Read More</RouterLink>
+                
             </div>
         </div>  
     </div>
 </template>
 <script>
+//ADD ROUTE TO ROUTER FOR BLOG POSTS :)
 import posts from "@/blog/posts.json"
 export default {
     name: 'MyBlogComponent',
@@ -38,5 +40,12 @@ export default {
     display: block;
     background: var(--main-white-color);
     border: #171616 2px solid;
+}
+.content {
+    text-wrap: balance;
+    color: var(--main-text-color);
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.5;
 }
 </style>
