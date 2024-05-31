@@ -5,6 +5,11 @@ Use px for images
 Use px, %, or em for box sizes
 Use ratios for line height
 
+#nprogress .bar: The progress bar itself.
+#nprogress .peg: The "peg" at the end of the progress bar.
+#nprogress .spinner: The spinner, which is shown when showSpinner is set to true.
+#nprogress .spinner-icon: The SVG icon inside the spinner.
+
 */
 :root {
   --main-color:#ea339e;
@@ -12,7 +17,7 @@ Use ratios for line height
   --secondary-color:#1F0011;
   --secondary-secondary-color:#ffbfe1;
   --main-text-color:#171616;
-  --main-white-color:#ffe4e4;
+  --main-white-color:#ffdbef;
 }
 body {
   color: #171616;
@@ -24,6 +29,18 @@ body {
   content: "";
   clear: both;
   display: table;
+}
+#nprogress .bar{
+  background: var(--main-color);
+  height: 5px;
+
+}
+#nprogress .peg {
+  box-shadow: 0 0 10px var(--main-color), 0 0 5px var(--main-color);
+}
+#nprogress .spinner-icon {
+  border-top-color: var(--main-color);
+  border-left-color: var(--main-color);
 }
 
 

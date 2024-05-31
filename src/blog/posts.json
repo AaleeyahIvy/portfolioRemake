@@ -1,0 +1,21 @@
+{
+    "posts":
+    [
+        {
+            "id": 1,
+            "title": "I'm Writing My First Blog Post!",
+            "author": "Aaleeyah",
+            "date": "May 31st, 2024",
+            "content": "Well, I am writing my first blog post. I was thinking of using a middleware cms like buttercms or wordpress, but I decided to write my own. I am using a json file to store my posts. I will be adding more features to this blog soon. Stay tuned!",
+            "image": "@/assets/images/skys.jpg"
+        },
+        {
+            "id": 2,
+            "title": "Hello Again",
+            "author": "Aaleeyah",
+            "date": "2016-01-02",
+            "content": "This is my dummy post, just making sure things get rendered correctly and all that cool jazz.",
+            "image": "/assets/images/skys.jpg"
+        }
+    ]
+}
