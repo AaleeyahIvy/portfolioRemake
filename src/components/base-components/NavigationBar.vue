@@ -15,7 +15,7 @@ export default {
     name: 'NavigationBar',
     data() {
         return {
-
+            
         }
     }
 }

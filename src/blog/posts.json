@@ -6,6 +6,7 @@
             "title": "I'm Writing My First Blog Post!",
             "author": "Aaleeyah",
             "date": "May 31st, 2024",
+            "excerpt": "First post using JSON post system. I will be adding more features soon.",
             "content": "Well, I am writing my first blog post. I was thinking of using a middleware cms like buttercms or wordpress, but I decided to write my own. I am using a json file to store my posts. I will be adding more features to this blog soon. Stay tuned!",
             "image": "https://images.unsplash.com/photo-1531604250646-2f0e818c4f06?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&dl=ann-savchenko-H0h_89iFsWs-unsplash.jpg"
         },
@@ -13,8 +14,18 @@
             "id": 2,
             "title": "Hello Again",
             "author": "Aaleeyah",
-            "date": "2016-01-02",
+            "date": "May 31st, 2024",
+            "excerpt": "This is a dummy post to make sure things are rendering correctly.",
             "content": "This is my dummy post, just making sure things get rendered correctly and all that cool jazz.",
+            "image": "https://images.unsplash.com/photo-1531604250646-2f0e818c4f06?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&dl=ann-savchenko-H0h_89iFsWs-unsplash.jpg"
+        },
+        {
+            "id": 3,
+            "title": "Working on a Json Blog/Post system",
+            "author": "Aaleeyah",
+            "date": "June, 3rd, 2024",
+            "excerpt": "Details about my json blog system. What i want to do with it and how it's going so far.",
+            "content": "I don't want to invest in a CMS, so I am working on a json blog system. Right now, I have a json file filled with my blog posts, and maybe will add features to this soon like - add/delete blog post functionality. My current tech stack is Vue.js, Node.js, and Express.js with webpack and anime.js for animations.",
             "image": "https://images.unsplash.com/photo-1531604250646-2f0e818c4f06?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&dl=ann-savchenko-H0h_89iFsWs-unsplash.jpg"
         }
     ]

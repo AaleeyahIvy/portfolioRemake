@@ -42,7 +42,52 @@ body {
   border-top-color: var(--main-color);
   border-left-color: var(--main-color);
 }
+.router-link {
+  color: var(--main-text-color);
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
 
+.post-image {
+  width: 150px;
+  height: 150px;
+}
+.excerpt {
+  text-wrap: balance;
+  color: var(--main-text-color);
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.post{
+  margin: 20px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  background: var(--main-white-color);
+  border: #171616 2px solid;
+  align-content: flex-start;
+  justify-content: center;
+  align-items: center;
+  border: #171616 2px solid;
+  border-radius: 10px;
+  }
+.content {
+  text-wrap: balance;
+  color: var(--main-text-color);
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.post-holder {
+  margin: auto;
+  padding: 10px;
+  display: grid;
+
+  background: var(--main-white-color);
+  border: #171616 2px solid;
+} 
 
 /* MEDIA QUERIES */
 /* Small devices (portrait tablets and large phones, 600px and up) */

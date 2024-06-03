@@ -1,12 +1,12 @@
 <template>
     <div id="app">
         <NavigationBar />
-        <MyBlogComponent />
+        <PostList />
         <FooterComponent />
     </div>
 </template>
 <script>
-import MyBlogComponent from '../components/base-components/MyBlogComponent.vue'
+import PostList from '../components/base-components/PostList.vue'
 import NavigationBar from '../components/base-components/NavigationBar.vue'
 import FooterComponent from '../components/base-components/FooterComponent.vue'
 
@@ -19,7 +19,7 @@ export default {
     },
     components: {
         NavigationBar,
-        MyBlogComponent,
+        PostList,
         FooterComponent
     }
 }

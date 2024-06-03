@@ -1,6 +1,5 @@
 <template>
     <div class="picture-box col-10">
-        <h1>My Art Gallery</h1>
         <div class="row">
             <img :src="require('@/assets/images/blackafro.png')" class="picture" @click="showImage($event)">
             <img :src="require('@/assets/images/hawaii.png')" class="picture" @click="showImage($event)">

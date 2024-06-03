@@ -1,6 +1,5 @@
 <template>
     <div class="project-box col-10">
-        <h1>My Projects</h1>
         <div v-for="project in projects" :key="project.title" class="project">
             <h2>{{ project.title }}</h2>
             <p>{{ project.description }}</p>
