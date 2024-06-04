@@ -2,6 +2,7 @@
     <div class="post">
         <img :src="post.image" alt="post.title" class="post-image"/>
         <h1>{{ post.title }}</h1>
+        <h4 class="date">{{ post.date }}</h4>
         <p class="excerpt">{{ post.excerpt }}</p>
         <div>
             <RouterLink class="router-link" :to="'/blog/' + post.id">Go to post</RouterLink>

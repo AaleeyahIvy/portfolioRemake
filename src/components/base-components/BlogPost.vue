@@ -4,6 +4,7 @@
         <div class="blog-post">
             <h1>{{ post.title }}</h1>
             <img :src="post.image" alt="Post image">
+            <hr>
             <div class="blog-content">{{ post.content }}</div>
         </div>
     </div>
