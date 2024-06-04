@@ -8,7 +8,7 @@
             "date": "May 31st, 2024",
             "excerpt": "First post using JSON post system. I will be adding more features soon.",
             "content": "Well, I am writing my first blog post. I was thinking of using a middleware cms like buttercms or wordpress, but I decided to write my own. I am using a json file to store my posts. I will be adding more features to this blog soon. Stay tuned!",
-            "image": "https://images.unsplash.com/photo-1531604250646-2f0e818c4f06?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&dl=ann-savchenko-H0h_89iFsWs-unsplash.jpg"
+            "image": "oceansunset.jpg"
         },
         {
             "id": 2,
@@ -17,7 +17,7 @@
             "date": "May 31st, 2024",
             "excerpt": "This is a dummy post to make sure things are rendering correctly.",
             "content": "This is my dummy post, just making sure things get rendered correctly and all that cool jazz.",
-            "image": "https://images.unsplash.com/photo-1531604250646-2f0e818c4f06?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&dl=ann-savchenko-H0h_89iFsWs-unsplash.jpg"
+            "image": "nightsky.jpg"
         },
         {
             "id": 3,
@@ -25,8 +25,17 @@
             "author": "Aaleeyah",
             "date": "June, 3rd, 2024",
             "excerpt": "Details about my json blog system. What i want to do with it and how it's going so far.",
-            "content": "I don't want to invest in a CMS, so I am working on a json blog system. Right now, I have a json file filled with my blog posts, and maybe will add features to this soon like - add/delete blog post functionality. My current tech stack is Vue.js, Node.js, and Express.js with webpack and anime.js for animations.",
-            "image": "./assets/images/sunset-picture-border.png"
+            "content": "I don't want to invest in a CMS, so I am working on a json blog system. Right now, I have a json file filled with my blog posts, and maybe will add features to this soon like - add/delete blog post functionality. <br><br> My current tech stack is Vue.js, Node.js, and Express.js with webpack and anime.js for animations. <li> Something something </li> <li> Testing my markdown <li",
+            "image": "aestheticsky.jpg"
+        },
+        {
+            "id": 4,
+            "title": "My background in web development",
+            "author": "Aaleeyah",
+            "date": "June, 4th, 2024",
+            "excerpt": "About my web development history.",
+            "content": "<h2>How I got started?</h2> Well first off, I have always enjoyed creating things and making them look really nice. I have an extensive background in illustration and would love to get into graphic design. Though I love to learn complex subjects such as engineering. So why not be a web developer or delve into software engineer while also creating my own projects.I'm learning a lot at my current job and it's pressuring me to learn new frameworks.<br><br> At first, Vue.JS, was absolutely terrifying to me because I always used vanilla JS and used different libraries for design and animations. But eventually it got more comfortable and I said 'Hey' why not use this framework to create a new portfolio.",
+            "image": "abstractsky.jpg"
         }
     ]
 }

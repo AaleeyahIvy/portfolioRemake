@@ -3,9 +3,9 @@
     <div class="blog-post-holder col-10" v-if="post">
         <div class="blog-post">
             <h1>{{ post.title }}</h1>
-            <img :src="post.image" alt="Post image">
+            <img :src="blogImage" alt="Post image">
             <hr>
-            <div class="blog-content">{{ post.content }}</div>
+            <div v-html="post.content" class="blog-content"></div>
         </div>
     </div>
 </div>
@@ -24,6 +24,9 @@ export default {
         post() {
             return posts.posts.find((post) => post.id == this.postId);
             //this is a lifecycle hook that runs when the component is created
+        },
+        blogImage() {
+            return require(`@/assets/images/${this.post.image}`);
         },
     },
 };

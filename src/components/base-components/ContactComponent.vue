@@ -13,7 +13,7 @@
         </div>
         <div class="info-box">
             <div class="contact-info" >
-                <img :src="someimage">
+                <img :src="require('@/assets/images/HappyAaleeyah1.jpg')" alt="Aaleeyah Ivy-Kilgore">
                 <p>Email: <a href="mailto:samanthastar87@gmail.com">samanthastar87@gmail.com</a></p>
                 <p>Phone: 513-376-5017</p>
                 <p>Lives In Cincinnati, OH</p>
