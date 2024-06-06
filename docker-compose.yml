@@ -1,21 +1,21 @@
 services: # Services to run
  app: # App service
- build:   # Build the app
- context: .   # Context of the build
- dockerfile: Dockerfile   # Dockerfile to use
- container_name: vue-app  # Name of the container
- ports:
-  - 8080:80
-nginx: # Nginx service
- image: nginx:alpine # Image to use
- container_name: nginx-app # Name of the container
- restart: unless-stopped # Keeps it running despite server shuts down
- volumes:
-  - ./nginx/nginx.conf:/etc/nginx/conf.d/default.conf # Mounts the local nginx folder to the container's nginx folder ./nginx: <---host where your web files are at /etc/nginx <---container never changes
- ports:
-  - 80:80 # Plain and simple port mapping
- depends_on:
-  - app # Makes sure the app is running before nginx starts
+  build:   # Build the app
+  context: .   # Context of the build
+  dockerfile: Dockerfile   # Dockerfile to use
+  container_name: vue-app  # Name of the container
+  ports:
+   - 8080:80
+ nginx: # Nginx service
+  image: nginx:alpine # Image to use
+  container_name: nginx-app # Name of the container
+  restart: unless-stopped # Keeps it running despite server shuts down
+  volumes:
+   - ./nginx/nginx.conf:/etc/nginx/conf.d/default.conf # Mounts the local nginx folder to the container's nginx folder ./nginx: <---host where your web files are at /etc/nginx <---container never changes
+  ports:
+   - 80:80 # Plain and simple port mapping
+  depends_on:
+   - app # Makes sure the app is running before nginx starts
 
   ## Commands to get to server
   # ssh tux@192.168.50.84 
