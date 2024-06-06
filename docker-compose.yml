@@ -3,7 +3,7 @@ services: # Services to run
   build: .  # Build the app
   container_name: vue-app  # Name of the container
   ports:
-   - 8080:80
+   - 8081:81
  nginx: # Nginx service
   image: nginx:alpine # Image to use
   container_name: nginx-app # Name of the container
@@ -11,7 +11,7 @@ services: # Services to run
   volumes:
    - ./nginx/nginx.conf:/etc/nginx/conf.d/default.conf # Mounts the local nginx folder to the container's nginx folder ./nginx: <---host where your web files are at /etc/nginx <---container never changes
   ports:
-   - 80:80 # Plain and simple port mapping
+   - 81:81 # Plain and simple port mapping
   depends_on:
    - app # Makes sure the app is running before nginx starts
 
