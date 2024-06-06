@@ -1,11 +1,11 @@
 services: # Services to run
  app: # App service
-  build:   # Build the app
-  context: .   # Context of the build
-  dockerfile: Dockerfile   # Dockerfile to use
-  container_name: vue-app  # Name of the container
-  ports:
-   - 8080:80
+ build:   # Build the app
+ context: .   # Context of the build
+ dockerfile: Dockerfile   # Dockerfile to use
+ container_name: vue-app  # Name of the container
+ ports:
+  - 8080:80
 nginx: # Nginx service
  image: nginx:alpine # Image to use
  container_name: nginx-app # Name of the container
