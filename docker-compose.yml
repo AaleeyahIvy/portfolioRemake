@@ -8,9 +8,9 @@ services: # Services to run
   image: nginx:alpine # Image to use
   container_name: nginx-app # Name of the container
   restart: unless-stopped # Keeps it running despite server shuts down
-  volumes:
-   - ./nginx/nginx.conf:/etc/nginx/conf.d/default.conf # Mounts the local nginx folder to the container's nginx folder ./nginx: <---host where your web files are at /etc/nginx <---container never changes
-   - ./portfolio/public:/usr/share/nginx/html
+  #volumes:
+   #- ./nginx/nginx.conf:/etc/nginx/conf.d/default.conf # Mounts the local nginx folder to the container's nginx folder ./nginx: <---host where your web files are at /etc/nginx <---container never changes
+   #- ./portfolio/public:/usr/share/nginx/html
   ports:
    - 81:81 # Plain and simple port mapping
   depends_on:
